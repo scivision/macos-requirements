@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import pandas
 from matplotlib.pyplot import figure, show, xkcd
 from pathlib import Path
@@ -7,8 +7,7 @@ R = Path(__file__).parent
 
 fn = R / "MacOShardware.csv"
 
-dat = pandas.read_csv(fn, index_col=0, usecols=[0, 1, 2, 3, 4, 5, 6])
-dat.index = dat.index.str.rstrip("0")
+dat = pandas.read_csv(fn, index_col=0, usecols=[0, 1, 2, 3, 4, 5, 6], skiprows=(1, 2))
 
 with xkcd():
     fg = figure(figsize=(12, 5))
