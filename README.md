@@ -1,6 +1,8 @@
-# MacOS hardware requirements
+# macOS hardware requirements
 
-Plot MacOS hardware requirements vs. time.
+Plot macOS hardware requirements vs. version.
+
+![macOS hardware reqiurements](https://www.scivision.dev/macos-hardware-requirements-by-version/macos_hardware.png)
 
 ## References
 
