@@ -24,7 +24,7 @@ with plt.xkcd():
     axs: typing.Any = fg.subplots(1, 2, sharey=True)
 
     ax = axs[0]
-    for k in {"Macbook Air", "Macbook Pro"}:
+    for k in {"Macbook Air", "Macbook Pro", "Macbook Neo"}:
         ax.plot(
             dat.index, dat[k].values, label=k, alpha=0.5, linestyle="--", marker="*"
         )

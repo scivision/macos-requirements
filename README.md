@@ -4,8 +4,11 @@ Plot macOS hardware requirements vs. version.
 
 ![macOS hardware requirements](https://private-user-images.githubusercontent.com/10931741/491253728-78e2b11a-0af3-4877-9bc8-38359733f03a.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTgyMjQwOTQsIm5iZiI6MTc1ODIyMzc5NCwicGF0aCI6Ii8xMDkzMTc0MS80OTEyNTM3MjgtNzhlMmIxMWEtMGFmMy00ODc3LTliYzgtMzgzNTk3MzNmMDNhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA5MTglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwOTE4VDE5Mjk1NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg1MzQ2MGJmYTg3OTRmNDM5MmVlNjEyNzRmZGJmZDgzOWM3YzNlNmJmZDQzYTU0Y2I0NTM5ZjkwYjQyM2RiYmYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.3OpV-WN6bsYdNE-A6WYdUL3iWQPgXd8laOb8Hym_tfk)
 
-## References
-
-* [Wikipedia](https://en.wikipedia.org/wiki/MacOS_Monterey#System_requirements)
-* [Apple: Ventura](https://support.apple.com/en-us/HT213264)
-* [Apple: Big Sur](https://support.apple.com/en-us/HT211238)
+macOS version | name  | requirements URL
+--------------|-------|-----------------
+26 | Tahoe  | https://support.apple.com/en-us/122867
+15 | Sequoia | https://support.apple.com/en-us/120282
+14 | Sonoma  | https://support.apple.com/en-us/105113
+13 | Ventura | https://support.apple.com/en-us/HT213264
+12 | Monterey | https://support.apple.com/en-us/103260
+11 | Big Sur | https://support.apple.com/en-us/HT211238
