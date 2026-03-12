@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+# /// script
+# dependencies = [
+# "pandas",
+# "matplotlib",
+# ]
+# ///
 
 import typing
 from pathlib import Path
@@ -19,7 +25,9 @@ with plt.xkcd():
 
     ax = axs[0]
     for k in {"Macbook Air", "Macbook Pro"}:
-        ax.plot(dat.index, dat[k].values, label=k, alpha=0.5, linestyle="--", marker="*")
+        ax.plot(
+            dat.index, dat[k].values, label=k, alpha=0.5, linestyle="--", marker="*"
+        )
     ax.tick_params(axis="x", labelrotation=20)
     ax.set_ylabel("year")
     ax.set_xlabel("macOS version")
@@ -27,7 +35,9 @@ with plt.xkcd():
 
     ax = axs[1]
     for k in {"Mac Studio", "Mac Mini", "Mac Pro", "iMac"}:
-        ax.plot(dat.index, dat[k].values, label=k, alpha=0.5, linestyle="--", marker="*")
+        ax.plot(
+            dat.index, dat[k].values, label=k, alpha=0.5, linestyle="--", marker="*"
+        )
     ax.tick_params(axis="x", labelrotation=20)
     ax.legend()
 
