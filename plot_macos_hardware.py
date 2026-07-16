@@ -6,7 +6,6 @@
 # ]
 # ///
 
-import typing
 from pathlib import Path
 
 import pandas
@@ -21,12 +20,12 @@ dat = pandas.read_csv(fn, index_col=0, skiprows=(1, 2, 3, 4, 5))
 
 with plt.xkcd():
     fg = plt.figure(figsize=(12, 5), layout="constrained")
-    axs: typing.Any = fg.subplots(1, 2, sharey=True)
+    axs = fg.subplots(1, 2, sharey=True)
 
     ax = axs[0]
     for k in {"Macbook Air", "Macbook Pro", "Macbook Neo"}:
         ax.plot(
-            dat.index, dat[k].values, label=k, alpha=0.5, linestyle="--", marker="*"
+            dat.index, dat[k].to_numpy(), label=k, alpha=0.5, linestyle="--", marker="*"
         )
     ax.tick_params(axis="x", labelrotation=20)
     ax.set_ylabel("year")
@@ -36,7 +35,7 @@ with plt.xkcd():
     ax = axs[1]
     for k in {"Mac Studio", "Mac Mini", "Mac Pro", "iMac"}:
         ax.plot(
-            dat.index, dat[k].values, label=k, alpha=0.5, linestyle="--", marker="*"
+            dat.index, dat[k].to_numpy(), label=k, alpha=0.5, linestyle="--", marker="*"
         )
     ax.tick_params(axis="x", labelrotation=20)
     ax.legend()
@@ -52,7 +51,7 @@ with plt.xkcd():
 
     ax.plot(
         dat.index,
-        dat["EOL"].values,
+        dat["EOL"].to_numpy(),
         linestyle="--",
         marker="*",
         color="red",
